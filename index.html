@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Par ou Ímpar</title>
+</head>
+
+<body>
+
+<h1>Par ou Ímpar</h1>
+
+<input type="number" id="numero" placeholder="Digite um número">
+
+<button onclick="enter()">
+    Enter
+</button>
+
+<p id="resultado"></p>
+
+<script>
+
+function enter(){
+
+    let numero = document.getElementById("numero").value;
+
+    if(numero % 2 == 0){
+        document.getElementById("resultado").innerHTML =
+        "O número é PAR";
+    }else{
+        document.getElementById("resultado").innerHTML =
+        "O número é ÍMPAR";
+    }
+
+}
+
+</script>
+
+</body>
+</html>
+
